@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "target": "es2022",
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/"
+  ]
+}

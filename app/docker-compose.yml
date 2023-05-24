@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  nginx:
+    image: sergef/docker-library-nginx:1.12.1
+    volumes:
+    - ./conf/nginx:/etc/nginx
+    ports:
+    - "8080:8200"
+
+
+  blazegraph:
+    image: lyrasis/blazegraph:2.1.5
+    expose:
+      - "8080"
+    volumes:
+      - ./blazegraph-data:/data
+
+
+  redis:
+    image: redis:7.0
+    ports: 
+      - "6379:6379"
+    
